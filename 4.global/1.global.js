@@ -1,6 +1,6 @@
-process.on('uncaughtException',function(e){
-    console.log('uncaughtException', e.message);
-});
+//process.on('uncaughtException',function(e){
+//    console.log('uncaughtException', e.message);
+//});
 /**
  * global == window 全局对象
  * module 当前模块对象
@@ -43,10 +43,19 @@ process.on('exit',function(){
     console.log('退出前执行');
 });
 
+
 try{
+
     var conn = 'mysql';
 
 }catch(e){
     console.log(e.message);
 }
-console.log(b);
+
+//console.log(b);
+//
+//process.on('uncaugthException',function(e){
+//
+//    console.log('uncaugthException', e.message);
+//
+//})

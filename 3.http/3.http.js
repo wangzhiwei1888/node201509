@@ -24,7 +24,7 @@ function serve(request,response){
   }else if(pathname == '/clock'){
      var counter =0;
     var int = setInterval(function(){
-        response.write(new Date().toString());
+        response.write(new Date().toString()+"<br/>");
         counter++;
         if(counter==5){
             clearInterval(int);
